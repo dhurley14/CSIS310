@@ -8,7 +8,7 @@ def fnc(x):
 
 def sec(a,b,tol):
 
-    count = 0
+    lineCount = 0
     if fnc(b)<fnc(a):
         #swap numbers
         temp = b
@@ -16,11 +16,11 @@ def sec(a,b,tol):
         a = temp
     c = b      #to start the loop
     while abs(fnc(c)) > tol:
-        count = count + 1
+        lineCount = lineCount + 1
         c = a-((b-a)*fnc(a))/(fnc(b) - fnc(a))
         b = a
         a = c
-    return[count, c]
+    return[lineCount, c]
 
 z = sec(-5.0, -3.0, 0.00001)
 k = sec(-7.0, -5.0, 0.00001)
