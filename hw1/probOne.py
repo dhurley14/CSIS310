@@ -6,18 +6,18 @@ def fnc(x):
 
 def bisec(a,b,tol):
 
-    lineCount = 0
+    count = 0
     while (b-a) > (tol*2):
         c = (a+b)/2
-        lineCount = lineCount + 1
+        count = count + 1
         if fnc(a) * fnc(c) < 0:
             b=c
         else:
             a = c
-    return [lineCount,(b+a)/2] #return the average
+    return [count,(b+a)/2] #return the average
 
 
-z = bisec(-5.0,-3.0, 0.00001)
+z = bisec(-7.0,-5.0, 0.00001)
 print ""
 print z
 print ""

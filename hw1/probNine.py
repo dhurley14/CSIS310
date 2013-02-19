@@ -1,4 +1,4 @@
-#SECANT METHOD
+#regula falsi method.
 #02/07/2013
 import math #, pylab
 
