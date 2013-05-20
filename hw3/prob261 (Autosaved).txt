@@ -1,0 +1,8 @@
+# Devin Hurley
+# March 7th, 2013
+# CSIS310
+# Prob 2.61
+
+
+import math
+from numpy import matrix
